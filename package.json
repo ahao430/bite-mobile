@@ -1,0 +1,28 @@
+{
+  "name": "bite-mobile",
+  "version": "1.0.0",
+  "description": "1. 安装nodejs 2. 在当前目录打开命令行，执行npm install命令 3. src目录为源码，dist目录为打包生成的代码。 4. 执行gulp-build命令清空dist目录并重新打包。 5. 执行gulp命令，建立服务器并监听文件热刷新。",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-base64": "^0.1.3",
+    "gulp-cache": "^0.4.6",
+    "gulp-clean": "^0.3.2",
+    "gulp-file-include": "^1.1.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "mkdirp": "^0.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

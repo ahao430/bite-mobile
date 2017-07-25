@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('include/head.inc')
+    <link rel="stylesheet" href="./css/index.css">
+    <style type="text/css">
+        .bg{
+            background: #000000 ;
+        }
+        
+        .experience{
+            border-bottom:#ccc 1px solid; 
+        }
+    </style>
+</head>
+<body>
+    <div class="viewport index imgurl">
+
+        @@include('./include/header.inc')
+
+        <nav class="nav clearfix">
+            <a href="__APP__/kecheng/" >课程介绍</a>
+            <!--<a href="http://kdt.im/7AmjSzVlO">立即购买</a>-->
+            <a  href="__APP__/about/" >关于我们</a>
+        </nav>
+        
+        <div>
+            <img src="./images/area/banner2.jpg">
+        </div>
+
+        @@include('./include/experience.inc', {"text": "免费体验"})
+
+        <div class="comm-warp">
+            <div class="comm-title ">
+                <img src="./images/class_title.jpg">
+            </div>
+            <div class="comm-pic imgurl">
+                <img src="./images/index/index_text_pic1.jpg">
+            </div>
+            <h2 class="comm-text-h2">
+                在线学习，足不出户
+            </h2>
+            <p class="comm-text">不需要在烈日下奔波，也不必担心风吹雨淋，只要一台电脑和一个耳麦，就能轻松在家与欧美外教面对面上课。在线学习、多时段课程便捷灵活。足不出户，就能学好英语！</p>
+            <div class="comm-pic imgurl">
+                <img src="./images/index/index_text_pic2.jpg">
+            </div>
+            <h2 class="comm-text-h2">
+                自主研发学习平台
+            </h2>
+            <p class="comm-text">比特e学堂自主研发了线上教学服务平台，与QQ、Skype等平台相比，稳定性更强，清晰流畅。平台提供绘画、游戏等内容帮助孩子在玩乐中学习，家长还可以通过教学平台随时随地观看孩子课堂表现。</p>
+            <div class="comm-pic imgurl">
+                <img src="./images/index/index_text_pic3.jpg">
+            </div>
+            <h2 class="comm-text-h2">
+                全欧美外教团队
+            </h2>
+            <p class="comm-text">比特聘请拥有TEFL（国际英语教师资格证书）或TESOL（对外英语教学资格证书）的全欧美外教团队，给予学员最纯正地道的语言环境。</p>
+            <div class="comm-pic imgurl">
+                <img src="./images/index/index_text_pic4.jpg">
+            </div>
+            <h2 class="comm-text-h2">
+                自主研发国际化教材
+            </h2>
+            <p class="comm-text">比特e学堂所使用的教材《Bite English》，是比特拥有十多年教学经验的外籍教师和中籍教师自主编写，覆盖了中国青少年阶段英语学习的重点。</p>
+            <div class="comm-pic imgurl">
+                <img src="./images/index/index_text_pic5.jpg">
+            </div>
+            <h2 class="comm-text-h2">
+                互动远程辅导系统
+            </h2>
+            <p class="comm-text">比特e学堂的欧美外教老师会根据学员的课堂表现进行点评、指出不足。我们还为每位学员配备专属班主任：帮助学员预习辅导、实时跟进学员学习情况、酌情调整学习方案，帮助学员科学有效学习。</p>
+            <div class="comm-title ">
+                <img src="./images/vido_title.jpg">
+            </div>
+            <div class="index-video">
+                <video class="bg" src="__APP__/Uploads/Video/Mobile/class.mp4" controls="controls">
+                    
+                </video>
+                <p>比特e学堂上课片段</p>
+            </div>
+            <div class="index-video">
+                <video class="bg" src="__APP__/Uploads/Video/Mobile/xc.mp4" controls="controls">    
+                </video>
+                <p>比特e学堂宣传片</p>
+            </div>
+            <div>
+                <h4>注册<span class="red">免费领取</span>3888元的真人纠音课程+288元外教一对一课程</h4>
+            </div>
+        </div>
+        <div>
+            <a href="__APP__/registerzl/">
+                <img src="./images/introduction_middle.jpg">
+            </a>
+        </div>
+       
+        @@include('./include/footer.inc')    
+    </div>
+    @@include('./include/foot.inc')
+</body>
+</html>
