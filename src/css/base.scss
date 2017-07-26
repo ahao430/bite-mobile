@@ -37,83 +37,107 @@ ins{text-decoration:none}
     img{ width:100%; }
 }
 
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
 @media only screen and (max-width:300px){
     html{font-size:8.33333px}
     .viewport{max-width:300px}
+    .container{width: 100%}
 }
 @media only screen and (max-width:310px) and (min-width:300px){
     html{font-size:8.33333px}
     .viewport{max-width:310px}
+    .container{width: 100%}
 }
 @media only screen and (max-width:320px) and (min-width:310px){
     html{font-size:8.61111px}
     .viewport{max-width:320px}
+    .container{width: 100%}
 }
 @media only screen and (max-width:350px) and (min-width:320px){
     html{font-size:8.88889px}
     .viewport{max-width:350px}
+    .container{width: 100%}
 }
 @media only screen and (max-width:360px) and (min-width:350px){
     html{font-size:9.72222px}
     .viewport{max-width:360px}
+    .container{width: 95%}
 }
 @media only screen and (max-width:400px) and (min-width:360px){
     html{font-size:10px}
     .viewport{max-width:400px}
+    .container{width: 95%}
 }
 @media only screen and (max-width:470px) and (min-width:400px){
     html{font-size:14.11111px}
     .viewport{max-width:470px}
+    .container{width: 95%}
 }
 @media only screen and (max-width:480px) and (min-width:470px){
     html{font-size:16.05556px}
     .viewport{max-width:480px}
+    .container{width: 95%}
 }
 @media only screen and (max-width:540px) and (min-width:480px){
     html{font-size:16.33333px}
     .viewport{max-width:540px}
+    .container{width: 90%;}
 }
 @media only screen and (max-width:560px) and (min-width:540px){
     html{font-size:18px}
     .viewport{max-width:560px}
+    .container{width: 90%;}
 }
 @media only screen and (max-width:570px) and (min-width:560px){
     html{font-size:18.55556px}
     .viewport{max-width:570px}
+    .container{width: 90%;}
 }
 @media only screen and (max-width:630px) and (min-width:570px){
     html{font-size:19.83333px}
     .viewport{max-width:630px}
+    .container{width: 90%;}
 }
 @media only screen and (max-width:640px) and (min-width:630px){
     html{font-size:20.5px}
     .viewport{max-width:640px}
+    .container{width: 85%;}
 }
 @media only screen and (max-width:710px) and (min-width:640px){
     html{font-size:20.77778px}
     .viewport{max-width:710px}
+    .container{width: 85%;}
 }
 @media only screen and (max-width:720px) and (min-width:710px){
     html{font-size:22.72222px}
     .viewport{max-width:720px}
+    .container{width: 85%;}
 }
 @media only screen and (max-width:740px)  and (min-width:720px){
     html{font-size:23px}
     .viewport{max-width:740px}
+    .container{width: 85%;}
 }
 @media only screen and (max-width:760px)  and (min-width:740px){
     html{font-size:24px}
     .viewport{max-width:760px}
+    .container{width: 80%;}
 }
 @media only screen and (max-width:780px)  and (min-width:760px){
     html{font-size:24.78px}
     .viewport{max-width:780px}
+    .container{width: 80%;}
 }
 @media only screen and (max-width:800px)  and (min-width:780px){
     html{font-size:25px}
     .viewport{max-width:800px}
+    .container{width: 80%;}
 }
 @media only screen and (min-width:820px){
     html{font-size:25px}
-    
+    .container{width: 80%;} 
 }

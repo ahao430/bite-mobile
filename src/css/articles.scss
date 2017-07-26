@@ -14,41 +14,54 @@
     text-align: center;
   }
 
-  // 文章段落
-  &>p{
-    font-size: 12px;
-    color: $black;
-    padding-bottom: 20px;
-    line-height: 2;
-  }
-  .pic{
-    text-align: center;
-    padding-bottom: 20px;
-    img{
-      max-width: 100%;
+  // 正文
+  .article-content{
+    padding: 0 10px;
+    p{
+      font-size: 12px;
+      color: $black;
+      padding-bottom: 20px;
+      line-height: 2;
     }
-  }
-  // 文章下方点赞
-  .article-addlike{
-    .item{
-      display: inline-block;
-      margin-right: 10px;
+    .pic{
+      text-align: center;
+      padding-bottom: 20px;
       img{
-        width: 20px;
-        height: 20px;
-        vertical-align: top;
-        cursor: pointer;
-      }
-      p{
-        display: inline-block;
-        font-size: 10px;
-        line-height: 1;
+        max-width: 100%;
       }
     }
   }
-  // 文章下方分享
+  
+  .article-footer{
+    padding: 0 10px;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 10px;
+    .addlike{
+      width: 14px;
+      height: 14px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+
+  .article-next{
+    padding: 0 10px;
+    margin-bottom: 20px;
+    a{
+      font-size: 10px;
+      font-weight: bold;
+      &:hover, &:active{
+        color: $red;
+      }
+    }
+  }
+
   .article-share{
-    padding: 20px 0;
+    margin-bottom: 20px;
+    background-color: #f7f8fa;
+    padding: 10px;
     a{
       padding: 0 2px;
     }
@@ -58,26 +71,16 @@
       vertical-align: top;
     }
   }
-  .article-link{
-    padding: 20px 0;
-    a{
-      display: block;
-      line-height: 2;
-      font-size: 14px;
-      &:hover{
-        text-decoration: underline;
-      }
-    }
-  }
+
   // 文章下方评论
   .article-comment{
     .comment-header{
       background-color: $green;
       color: $white;
-      height: 31px;
-      line-height: 31px;
+      height: 25px;
+      line-height: 25px;
       span{
-        font-size: 12px;
+        font-size: 10px;
         padding: 0 10px;
         &.article-comment-login{
           cursor: pointer;
@@ -94,73 +97,14 @@
         resize: none;
         padding: 10px;
         box-sizing: border-box;
-        font-size: 12px;
+        font-size: 10px;
       }
-      .comment-btns{
-        padding-top: 5px;
-        .btn{
-          display: inline-block;
-          padding-right: 10px;
-          cursor: pointer;
-          img{
-            width: 20px;
-            height: 20px;
-            vertical-align: top;
-          }
-          label{
-            cursor: pointer;
-          }
-          &.comment-select{
-            position: relative;
-            padding-right: 20px;
-            text-indent: 10px;
-            .select-input{
-              background-color: transparent;
-              width: 30px;
-              padding-right: 30px;
-              position: relative;
-              z-index: 2;
-              user-select: none;
-            }
-            &>img{
-              width: 20px;
-              height: 15px;
-              vertical-align: middle;
-              position: absolute;
-              right: 20px;
-              top: 2px;
-              z-index: 0;
-            }
-            .select-options{
-              position: absolute;
-              z-index: 1;
-              top: 30px;
-              width: 100%;
-              background-color: #fff;
-              border: 1px solid $black;
-              text-indent: 0;
-              li{
-                padding: 5px;
-                box-sizing: border-box;
-                width: 100%;
-                img{
-                  margin-right: 5px;
-                  width: 16px;
-                  height: 16px;
-                  vertical-align: middle;
-                }
-                &:hover{
-                  background-color: $grey;
-                }
-              }
-            }
-          }
-          &.comment-submit{
-            padding: 5px 25px;
-            text-align: center;
-            font-size: 12px;
-            border-radius: 5px;
-          }
+      .checkbox{
+        input{
+        }
+        span{
+          font-size: 8px;
+          font-weight: bold;
         }
       }
       .comment-list{
@@ -173,17 +117,17 @@
             border-top: 1px solid #ddd;
           }
           .comment-avatar{
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
             position: absolute;
             left: 0;
           }
           .comment-content{
-            font-size: 12px;
+            font-size: 10px;
             color: $grey;
             p{
               &:first-child{
-                margin-bottom: 8px;
+                margin-bottom: 5px;
               }
               .name{
                 color: $orange;
@@ -194,74 +138,33 @@
       }
     }
   }
-}
-// 加入我们
-.joinus{
-  text-align: center;
-  background-color: #fff;
-  color: $grey;
-  padding-bottom: 20px;
-  .join-1, .join-2{
-    margin-bottom: 10px;
-    &>p{
-    font-size: 12px;
-    padding-bottom: 10px;
-  }
-  }
-  .join-2>p{
-    font-weight: bold;
-  }
-  .btn-order{
-    width: 185px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-}
-// 相关文章
-.relative-articles{
-  text-align: center;
-  .article-list{
-    overflow: hidden;
-    li{
-      width: 50%;
-      float: left;
-      text-align: left;
-      a{
-        font-size: 14px;
-        color: $black;
-        padding-left: 10%;
-        &:hover{
-          text-decoration: underline;
+
+  .article-recommends{
+    margin: 20px 0;
+    .title{
+      color: $red;
+      font-size: 14px;
+      padding: 0 10px;
+      margin: 10px 0;
+      span{
+        border-top: 1px solid $red;
+        padding: 5px 0;
+      }
+    }
+    ul{
+      li{
+        color: #ababab;
+        background: url('../images/articles/triangle.png') no-repeat left 2px;
+        padding-left: 17px;
+        margin: 10px 0;
+        a{
+          color: #ababab;
+          &:hover, &:active{
+            color: $red;
+          }
         }
       }
     }
   }
 }
-// 猜你喜欢
-.guessulike{
-  .likes{
-    li{
-      overflow: hidden;
-      margin-bottom: 30px;
-      p{
-        font-size: 14px;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-      a{
-        float: left;
-        padding: 3px 5px;
-        margin: 5px 10px;
-        font-size: 12px;
-        color: $white;
-        background-color: $green;
-        border-radius: 5px;
-        &:hover{
-          background-color: $orange;
-        }
-      }
-    }
-  }
-}
+

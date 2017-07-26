@@ -49,10 +49,12 @@ gulp.task('babel', function(){
 //html加载模板
 gulp.task('include', function(){
   return gulp.src('src/*.html')
+  .pipe(plumber())
   .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
     }))//导入include文件
+  .pipe(plumber.stop())
   .pipe(gulp.dest('dist/'));
 });
 // 清理dist目录
@@ -63,6 +65,8 @@ gulp.task('clean', function(){
 // 复制文件
 gulp.task('copy', function(){
   return gulp.src('src/images/**/*.*')
+  .pipe(plumber())
+  .pipe(plumber.stop())
   .pipe(gulp.dest('dist/images'))
 })
 // 监听
